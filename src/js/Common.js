@@ -3,6 +3,7 @@ import objectFitVideos from 'object-fit-videos';
 import { $scrolledElements, $body, Resp, detectIE } from './_helpers';
 
 // import '@fancyapps/fancybox';
+import './components/Sliders'
 
 import 'bootstrap'
 import 'jquery'

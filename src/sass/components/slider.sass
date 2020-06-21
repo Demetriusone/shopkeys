@@ -1,0 +1,114 @@
+.slider
+    &__img
+        display: block
+    &__link
+        width: 100%
+        display: block
+        overflow: hidden
+        transition: all .25s ease 
+        position: relative
+        &:hover
+            .slider__link-overlay
+                    background-color: rgba(0,0,0,.75)
+            .slider__rating
+                opacity: 1
+                top: 2px
+            .slider__platform
+                opacity: 1
+                top: 4px
+               
+        &-overlay
+            position: absolute
+            height: 100%
+            width: 100%
+            bottom: 0
+            left: 0
+            background: url(../img/content/bg/overlay_shadow.png) bottom left repeat-x
+            z-index: 1
+            transition: all .3s ease
+            background-color: rgba(0,0,0,0)
+    &__top
+        position: absolute
+        top: 10px
+        left: 0
+        width: 100%
+        text-align: center
+        z-index: 2
+        display: flex
+        flex-direction: column
+        align-items: center 
+    &__rating
+        position: relative
+        opacity: 0
+        top: -10px
+        transition: all .3s ease
+        display: inline-block
+        margin-top: 13px
+        .rate
+            font-size: 16px
+            font-weight: 600
+            color: #ffcd02
+            text-shadow: 1px 1px 1px #555
+            margin-right: 5px
+    &__platform
+        position: relative
+        top: -10px
+        opacity: 0
+        margin-top: 13px
+        transition: all .3s ease
+        display: block
+        text-align: center 
+        &_uplay
+            display: inline-block
+            background: url(../img/content/sprite.png)
+            background-position: 0 -136px
+            width: 44px
+            height: 18px
+    &__bot
+        position: absolute
+        bottom: 10px
+        left: 2px
+        width: 100%
+        text-align: center
+        z-index: 2
+        margin-bottom: 25px
+        &-container
+            display: inline-block
+            position: relative
+        &-block
+                padding-left: 16px
+                padding-right: 16px
+                box-sizing: content-box
+                border-radius: 50px
+                border: 2px solid #808180
+                display: inline-block
+                &-price
+                       &_old
+                        display: inline-block
+                        height: 36px
+                        line-height: 35px
+                        color: #808180
+                        text-decoration: line-through
+                        &_new
+                            display: inline-block
+                            font-size: 18px
+                            height: 36px
+                            line-height: 35px
+                            color: #fff
+                            margin-left: 10px
+                        &_currency
+                            display: inline-block
+                            font-size: 18px
+                            height: 36px
+                            line-height: 35px
+                            margin-left: 5px
+                    
+                 
+                    
+                
+
+
+
+
+            
+
