@@ -21,17 +21,23 @@
             button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
                 span.navbar-toggler-icon
             #navbarSupportedContent.collapse.navbar-collapse
-                ul.navbar-nav.mr-auto.nav
-                    li.nav-item
-                        a.nav-link(href='#') Link
-                    li.nav-item.dropdown
+                ul.navbar-nav.mr-auto.nav#menu-header-menu-bottom
+                    li.nav-item.menu-item.menu-item-type-taxonomy.menu-item-object-category.current-category-ancestor.menu-item-2213#menu-item-2213
+                        a.nav-link(href='#') 
+                            i.fa.fa-th(aria-hidden='true')
+                            | Каталог товаров
+                    li.nav-item.dropdown.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children.menu-item-27#menu-item-27
                         a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                            | Dropdown
-                        .dropdown-menu(aria-labelledby='navbarDropdown')
-                            a.dropdown-item(href='#') Action
-                            a.dropdown-item(href='#') Another action
-                            .dropdown-divider
-                            a.dropdown-item(href='#') Something else here
+                            | Steam
+                        .dropdown-menu.submenu-items-wrapper(aria-labelledby='navbarDropdown')
+                            ul.sub-menu
+                                li.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-36#menu-item-36
+                                    a.dropdown-item(href='#') Аккаунты Steam
+                                li.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-36#menu-item-36
+                                    a.dropdown-item(href='#') Аккаунты Steam
+                                li.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-36#menu-item-36
+                                    a.dropdown-item(href='#') Аккаунты Steam
+                            
                     li.nav-item.dropdown
                         a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                             | Dropdown
