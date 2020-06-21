@@ -29,7 +29,7 @@
 
  
 
-#menu-header-menu-bottom .menu-item .sub-menu .menu-item a
+#menu-header-menu-bottom .menu-item .sub-menu .menu-item a 
     padding: 0
     padding-left: 15px
     padding-right: 25px
@@ -39,6 +39,25 @@
     cursor: pointer
     color: #3e3e3e
     white-space: nowrap
+#menu-header-menu-bottom .menu-item
+    &:hover
+        a
+            color: gold
+
+#menu-header-menu-bottom .menu-item.menu-item-has-children>a:after 
+    display: inline-block
+    font: normal normal normal 14px/1 FontAwesome
+    font-size: inherit
+    text-rendering: auto
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    font-size: 14px
+    display: inline-block
+    padding-left: 10px
+    text-align: right
+    content: "\f107"
+.dropdown-toggle::after
+    border: 0
 
 #menu-header-menu-bottom .menu-item .sub-menu .menu-item:hover a 
     color: #323232
@@ -46,6 +65,8 @@
     background: #ffe17b
 #menu-header-menu-bottom>.menu-item a 
     height: 42px
+    display: flex
+    align-items: center 
 
 
 #menu-header-menu-bottom .menu-item .sub-menu:before
@@ -60,3 +81,36 @@
 
 .dropdown-menu
     padding: 0
+
+#menu-header-menu-bottom .menu-item
+    display: inline-block
+    font-size: 0px
+    padding: 0 20px
+    cursor: pointer
+    position: relative
+
+.navbar-nav .dropdown-menu
+    border: 0
+.dropdown-item
+    padding: 0
+    width: 100%
+
+#menu-header-menu-bottom .menu-item
+    padding: 0
+
+.nav-item
+    margin: 0px 15px
+#menu-header-menu-bottom .menu-item
+    &:hover
+        color: gold 
+
+#menu-header-menu-bottom .menu-item .sub-menu .menu-item a:after 
+    content: ''
+    display: inline-block
+    position: absolute
+    right: 11px
+    top: 18px
+    background-image: url(//shop-keys.com/wp-content/themes/shopkeys_old/assets/css/../img/helper/sprite.png?21);
+    background-position: 0 -98px
+    height: 6px
+    width: 4px
