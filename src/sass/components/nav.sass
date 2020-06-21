@@ -37,11 +37,10 @@
     &:hover
         a
             color: gold
-#menu-header-menu-bottom .menu-item .dropdown-menu
-    &.show
-        &::before
-            display: none
-    
+// #menu-header-menu-bottom .menu-item 
+//     &.show
+//         
+
 .dropdown-menu
     padding: 0
 #menu-header-menu-bottom .menu-item .sub-menu .menu-item a
@@ -72,12 +71,13 @@
     content: '' 
     display: block 
     position: absolute 
-    top: -5px
+    top: -6px
     left: 12px
     border-left: 6px solid transparent
     border-bottom: 6px solid gold
     border-right: 6px solid transparent
-
+    +sm
+        display: none
 
 
 .navbar-nav .dropdown-menu
@@ -95,18 +95,9 @@
     &:hover
         color: gold 
 
-#menu-header-menu-bottom .menu-item .sub-menu .menu-item a:after 
-    content: ''
-    display: inline-block
-    position: absolute
-    right: 11px
-    top: 18px
-    background-image: url(//shop-keys.com/wp-content/themes/shopkeys_old/assets/css/../img/helper/sprite.png?21);
-    background-position: 0 -98px
-    height: 6px
-    width: 4px
+
 .navbar-toggler
     position: relative
 .navbar-toggler-icon
     background-image: url(../img/content/navbar.svg)
-        
+
