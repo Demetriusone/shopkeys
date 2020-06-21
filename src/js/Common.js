@@ -4,12 +4,8 @@ import { $scrolledElements, $body, Resp, detectIE } from './_helpers';
 
 // import '@fancyapps/fancybox';
 
-import './components/Header';
-import './components/Popups';
-import './components/Sliders';
-import './components/CustomScroll';
-import './components/VideoBlock';
-import './sections/Services';
+import 'bootstrap'
+import 'jquery'
 
 export class Common {
   constructor() {
@@ -52,5 +48,13 @@ export class Common {
     });
   }
 }
+
+$('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+
+
 
 export default new Common();

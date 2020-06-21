@@ -1,0 +1,40 @@
+.info
+    &__item
+        position: relative
+        &::before
+            position: absolute
+            content: ""
+            display: inline-block
+            top: 10px
+            left: 0
+            background-image: url(../img/content/sprite.png) 
+        &_stocks
+            &::before
+                background-position: 0 -45px
+                height: 16px
+                width: 18px
+        &_reviews
+            &::before
+                background-position: -18px -45px
+                height: 17px
+                width: 19px
+    &__title
+        display: inline-block
+        border-bottom: 1px solid transparent
+        font-size: 15px
+        line-height: 15px
+        color: #fff
+        transition: .1s
+        text-decoration: none
+    &__desc
+        display: block
+        font-size: 14px
+        line-height: 16px
+        margin-top: 5px
+        text-decoration: none
+        color: #bee0ff
+        text-overflow: ellipsis
+        overflow: hidden
+
+    
+            
