@@ -1,7 +1,7 @@
 //begin header
 +b.HEADER.header
     +e.container.container
-            +e.NAV.nav.navbar.row.pt-4.pb-4
+            +e.NAV.nav.navbar.row.pt-4.pb-4.navbar-light
                 +e.A.logo.navbar-brand.col-md-3.d-flex.justify-content-center
                     IMG(src='../img/header/logo/logo-1.png') 
                 +e.search.col
@@ -19,14 +19,15 @@
     +e.container.container
         +b.NAV.main-nav.navbar.navbar-expand-lg
             button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-                span.navbar-toggler-icon
+                span.navbar-toggler-icon 
             #navbarSupportedContent.collapse.navbar-collapse
                 ul.navbar-nav.mr-auto.nav#menu-header-menu-bottom
-                    li.nav-item.menu-item.menu-item-type-taxonomy.menu-item-object-category.current-category-ancestor.menu-item-2213#menu-item-2213
+                    li.nav-item.active.menu-item.menu-item-type-taxonomy.menu-item-object-category.current-category-ancestor.menu-item-2213#menu-item-2213
                         a.nav-link(href='#') 
                             i.fa.fa-th(aria-hidden='true')
                             | Каталог товаров
-                    li.nav-item.dropdown.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children.menu-item-27#menu-item-27
+                            span.sr-only (current)
+                    li.nav-item.dropdown.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children
                         a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                             | Steam
                         .dropdown-menu.submenu-items-wrapper(aria-labelledby='navbarDropdown')
@@ -81,6 +82,8 @@
                         a.nav-link(href='#') MineCraft
                     li.nav-item.menu-item.menu-item-type-taxonomy.menu-item-object-category.current-category-ancestor
                         a.nav-link(href='#') WarThunder
+
+
 
                             
                   
