@@ -13,90 +13,84 @@
     <!--begin header-->
     <header class="header">
       <ul class="dropdown-content dropdown-content--menu">
-        <li class="dropdown-content__item">
-          <A href="#"> Каталог товаров</A>
-        </li>
-        <div class="dropdown-content__item">
-          <div class="dropdown-content__title">Steam
-            <ul class="dropdown-menu">
-              <li class="dropdown-menu-item">
-                <a class="dropdown-menu__link" href="#">Аккаутны Steam</a>
+        <nav class="navbar navbar-expand-lg navbar-light mobile">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-th mr-2"></i>Каталог товаров</a>
               </li>
-              <li class="dropdown-menu-item">
-                <a class="dropdown-menu__link" href="#">Ключи и гифты Steam</a>
+              <li class="nav-item has-dropdown">
+                <a class="nav-link accordion__head" href="#">Steam
+                  <div class="accordion__body" style="display:none">
+                    <a href="#">Аккануты Steam</a>
+                    <a href="#">Ключи и гифты Steam</a>
+                    <a href="#">Сборник игр Steam</a>
+                  </div>
+                </a>
               </li>
-              <li class="dropdown-menu-item">
-                <a class="dropdown-menu__link" href="#">Аккаутны Steam</a>
+              <li class="nav-item has-dropdown">
+                <a class="nav-link accordion__head" href="#">Origin
+                  <div class="accordion__body" style="display:none">
+                    <a href="#">Аккануты Origin</a>
+                    <a href="#">Ключи Origin</a>
+                  </div>
+                </a>
               </li>
-              <li class="dropdown-menu-item">
-                <a class="dropdown-menu__link" href="#">Сборник игр Steam</a>
+              <li class="nav-item has-dropdown">
+                <a class="nav-link accordion__head" href="#">Uplay
+                  <div class="accordion__body" style="display:none">
+                    <a href="#">Аккануты Uplay</a>
+                    <a href="#">Ключи Uplay</a>
+                  </div>
+                </a>
               </li>
-            </ul>
-          </div>
-        </div>
-        <div class="dropdown-content__item">
-          <div class="dropdown-content__title">Steam
-            <ul class="dropdown-menu">
-              <li class="dropdown-menu-item">
-                <a class="dropdown-menu__link" href="#">Аккаутны Steam</a>
+              <li class="nav-item has-dropdown">
+                <a class="nav-link accordion__head" href="#">Word of Tanks
+                  <div class="accordion__body" style="display:none">
+                    <a href="#">WoT аккаунты с техникой </a>
+                    <a href="#">WoT аккаунты с боями</a>
+                    <a href="#">WoT аккаунты с топами</a>
+                    <a href="#">личные WoT аккаунты</a>
+                    <a href="#">Бонус коды WoT</a>
+                  </div>
+                </a>
               </li>
-              <li class="dropdown-menu-item">
-                <a class="dropdown-menu__link" href="#">Ключи и гифты Steam</a>
+              <li class="nav-item has-dropdown">
+                <a class="nav-link accordion__head" href="#">Battle.net
+                  <div class="accordion__body" style="display:none">
+                    <a href="#">Аккануты Battle.net </a>
+                    <a href="#">ключи Battle.net</a>
+                  </div>
+                </a>
               </li>
-              <li class="dropdown-menu-item">
-                <a class="dropdown-menu__link" href="#">Аккаутны Steam</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">MineCraft</a>
               </li>
-              <li class="dropdown-menu-item">
-                <a class="dropdown-menu__link" href="#">Сборник игр Steam</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="dropdown-content__item">
-          <div class="dropdown-content__title">Steam
-            <ul class="dropdown-menu">
-              <li class="dropdown-menu-item">
-                <a class="dropdown-menu__link" href="#">Аккаутны Steam</a>
-              </li>
-              <li class="dropdown-menu-item">
-                <a class="dropdown-menu__link" href="#">Ключи и гифты Steam</a>
-              </li>
-              <li class="dropdown-menu-item">
-                <a class="dropdown-menu__link" href="#">Аккаутны Steam</a>
-              </li>
-              <li class="dropdown-menu-item">
-                <a class="dropdown-menu__link" href="#">Сборник игр Steam</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="dropdown-content__item">
-          <div class="dropdown-content__title">Steam
-            <ul class="dropdown-menu">
-              <li class="dropdown-menu-item">
-                <a class="dropdown-menu__link" href="#">Аккаутны Steam</a>
-              </li>
-              <li class="dropdown-menu-item">
-                <a class="dropdown-menu__link" href="#">Ключи и гифты Steam</a>
-              </li>
-              <li class="dropdown-menu-item">
-                <a class="dropdown-menu__link" href="#">Аккаутны Steam</a>
-              </li>
-              <li class="dropdown-menu-item">
-                <a class="dropdown-menu__link" href="#">Сборник игр Steam</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">WarThunder</a>
               </li>
             </ul>
           </div>
-        </div>
+          <li class="search col mobile">
+            <input class="search__input w-100 px-3 m-0" placeholder="Быстрый поиск" aria-label="Search" type="text" />
+            <button class="search__btn btn my-2 my-sm-0" type="submit">
+              <i class="fa fa-search main-icon_search"></i>
+            </button>
+          </li>
+        </nav>
       </ul>
       <div class="header__container container">
         <nav class="header__nav navbar row pt-4 pb-4 navbar-light">
           <a class="header__logo navbar-brand col-md-4 col-lg-3 d-flex justify-content-center col-9">
             <IMG src="./img/header/logo/logo-1.png"> </IMG>
           </a>
-          <div class="header__search col">
-            <input class="header__search-input w-100 px-3 m-0" placeholder="Быстрый поиск" aria-label="Search" type="text" />
-            <button class="header__search-btn btn my-2 my-sm-0" type="submit">
+          <div class="search col">
+            <input class="search__input w-100 px-3 m-0" placeholder="Быстрый поиск" aria-label="Search" type="text" />
+            <button class="search__btn btn my-2 my-sm-0" type="submit">
               <i class="fa fa-search main-icon_search"></i>
             </button>
           </div>

@@ -5,28 +5,42 @@
             img
                 width: 191px
                 height: 46px
-    &__search
-        position: relative
+.search
+    position: relative
+    +sm
+        display: none
+    &.mobile
         +sm
-            display: none
-        &-input
-            height: 42px
-            border: 0
-            border-radius: 3px
-            display: block
-            font-size: 14px
-            outline: none
-            transition: all .2s
-            background-color: #fff
-        &-btn
-            position: absolute
-            right: 20px
-            outline: none
-            top: 50%
-            transform: translateY(-50%)
-            i
-                color: #dbdbdb
-                font-size: 18px
+            display: block  
+    &__input
+        height: 42px
+        border: 0
+        border-radius: 3px
+        display: block
+        font-size: 14px
+        outline: none
+        transition: all .2s
+        background-color: #fff
+        height: 42px
+        border: 0
+        border-radius: 3px
+        display: block
+        font-size: 14px
+        outline: none
+        transition: all .2s
+        background-color: #fff
+    &__btn
+        position: absolute
+        right: 20px
+        outline: none
+        top: 50%
+        transform: translateY(-50%)
+        i
+            color: #dbdbdb
+            font-size: 18px
+        
+        
+        
         
                 
            

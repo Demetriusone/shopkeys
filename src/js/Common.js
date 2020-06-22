@@ -55,6 +55,14 @@ export class Common {
 		$('.dropdown-content--menu').toggleClass('open');
 	})
 
+var acc = document.getElementsByClassName("accordion");
+var i;
 
+$('.accordion__head').on('click', function(){
+		var el = $(this);
+		el.next('.accordion__body').slideToggle();
+		el.toggleClass('open');
+		return false;
+	});
 
 export default new Common();
