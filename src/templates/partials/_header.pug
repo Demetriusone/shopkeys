@@ -1,90 +1,140 @@
 //begin header
 +b.HEADER.header
+    +b.UL.dropdown-content.dropdown-content--menu
+                    li.dropdown-content__item 
+                        A(href='#')  Каталог товаров
+                    .dropdown-content__item
+                        .dropdown-content__title Steam
+                            ul.dropdown-menu
+                                li.dropdown-menu-item
+                                    a.dropdown-menu__link(href='#') Аккаутны Steam
+                                li.dropdown-menu-item
+                                    a.dropdown-menu__link(href='#') Ключи и гифты Steam
+                                li.dropdown-menu-item
+                                    a.dropdown-menu__link(href='#') Аккаутны Steam
+                                li.dropdown-menu-item
+                                    a.dropdown-menu__link(href='#') Сборник игр Steam
+                    .dropdown-content__item
+                        .dropdown-content__title Steam
+                            ul.dropdown-menu
+                                li.dropdown-menu-item
+                                    a.dropdown-menu__link(href='#') Аккаутны Steam
+                                li.dropdown-menu-item
+                                    a.dropdown-menu__link(href='#') Ключи и гифты Steam
+                                li.dropdown-menu-item
+                                    a.dropdown-menu__link(href='#') Аккаутны Steam
+                                li.dropdown-menu-item
+                                    a.dropdown-menu__link(href='#') Сборник игр Steam
+                    .dropdown-content__item
+                        .dropdown-content__title Steam
+                            ul.dropdown-menu
+                                li.dropdown-menu-item
+                                    a.dropdown-menu__link(href='#') Аккаутны Steam
+                                li.dropdown-menu-item
+                                    a.dropdown-menu__link(href='#') Ключи и гифты Steam
+                                li.dropdown-menu-item
+                                    a.dropdown-menu__link(href='#') Аккаутны Steam
+                                li.dropdown-menu-item
+                                    a.dropdown-menu__link(href='#') Сборник игр Steam
+                    .dropdown-content__item
+                        .dropdown-content__title Steam
+                            ul.dropdown-menu
+                                li.dropdown-menu-item
+                                    a.dropdown-menu__link(href='#') Аккаутны Steam
+                                li.dropdown-menu-item
+                                    a.dropdown-menu__link(href='#') Ключи и гифты Steam
+                                li.dropdown-menu-item
+                                    a.dropdown-menu__link(href='#') Аккаутны Steam
+                                li.dropdown-menu-item
+                                    a.dropdown-menu__link(href='#') Сборник игр Steam
     +e.container.container
             +e.NAV.nav.navbar.row.pt-4.pb-4.navbar-light
-                +e.A.logo.navbar-brand.col-md-3.d-flex.justify-content-center
+                +e.A.logo.navbar-brand.col-md-4.col-lg-3.d-flex.justify-content-center.col-9
                     IMG(src='./img/header/logo/logo-1.png') 
                 +e.search.col
                     +e.INPUT( placeholder='Быстрый поиск', aria-label='Search').search-input.w-100.px-3.m-0     
                     +e.BUTTON(type='submit').search-btn.btn.my-2.my-sm-0
                             i.fa.fa-search.main-icon_search
-                +b.info.header_info.d-flex.align-items-center.col-md-4
+                +b.info.col-md-4
                     +e.A.item._stocks.pl-4(href='#')
                         +e.title Наши акции
                         +e.SPAN.desc до 98% скидки
                     +e.A.item._reviews.pl-4.ml-4(href='#')
                         +e.title Отзывы
                         +e.SPAN.desc 5226 отзывов
-+b.main-nav
+                +b.BUTTON.toggle-menu.col-2
+                    svg.svg-inline--fa.fa-bars.fa-w-14(aria-hidden='true', focusable='false', data-prefix='fas', data-icon='bars', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 448 512')
+                        path(fill='#fff', d='M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z')
+                
++b.NAV.main-nav.m-0
     +e.container.container
-        +b.NAV.main-nav.navbar.navbar-expand-lg
-            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-                span.navbar-toggler-icon 
-            #navbarSupportedContent.collapse.navbar-collapse
-                ul.navbar-nav.mr-auto.nav#menu-header-menu-bottom
-                    li.nav-item.active.menu-item.menu-item-type-taxonomy.menu-item-object-category.current-category-ancestor.menu-item-2213#menu-item-2213
-                        a.nav-link(href='#') 
-                            i.fa.fa-th(aria-hidden='true')
-                            | Каталог товаров
-                            span.sr-only (current)
-                    li.nav-item.dropdown.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children
-                        a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                            | Steam
-                        .dropdown-menu.submenu-items-wrapper(aria-labelledby='navbarDropdown')
-                            ul.sub-menu
-                                li.menu-item.menu-item-type-taxonomy.menu-item-object-category
-                                    a.dropdown-item(href='#') Аккаунты Steam
-                                li.menu-item.menu-item-type-taxonomy.menu-item-object-category
-                                    a.dropdown-item(href='#') Ключи и гифты Steam
-                                li.menu-item.menu-item-type-taxonomy.menu-item-object-category
-                                    a.dropdown-item(href='#') Сборник игр Steam
-                    li.nav-item.dropdown.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children
-                        a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                            | Origin
-                        .dropdown-menu.submenu-items-wrapper(aria-labelledby='navbarDropdown')
-                            ul.sub-menu
-                                li.menu-item.menu-item-type-taxonomy.menu-item-object-category
-                                    a.dropdown-item(href='#') Аккаунты Origin
-                                li.menu-item.menu-item-type-taxonomy.menu-item-object-category
-                                    a.dropdown-item(href='#') Ключи Origin
-                    li.nav-item.dropdown.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children.menu-item-27
-                        a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                            | Uplay
-                        .dropdown-menu.submenu-items-wrapper(aria-labelledby='navbarDropdown')
-                            ul.sub-menu
-                                li.menu-item.menu-item-type-taxonomy.menu-item-object-category
-                                    a.dropdown-item(href='#') Аккаунты Uplay
-                                li.menu-item.menu-item-type-taxonomy.menu-item-object-category
-                                    a.dropdown-item(href='#') Ключи Uplay
-                    li.nav-item.dropdown.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children
-                        a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                            | Word of Tanks
-                        .dropdown-menu.submenu-items-wrapper(aria-labelledby='navbarDropdown')
-                            ul.sub-menu
-                                li.menu-item.menu-item-type-taxonomy.menu-item-object-category
-                                    a.dropdown-item(href='#') Wot аккаунты с техникой 
-                                li.menu-item.menu-item-type-taxonomy.menu-item-object-category
-                                    a.dropdown-item(href='#') Wot аккаунты с боями
-                                li.menu-item.menu-item-type-taxonomy.menu-item-object-category
-                                    a.dropdown-item(href='#') Wot аккаунты с топами
-                                li.menu-item.menu-item-type-taxonomy.menu-item-object-category
-                                    a.dropdown-item(href='#') Личные Wot аккаунты 
-                    li.nav-item.dropdown.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children
-                        a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                            | Battle.net 
-                        .dropdown-menu.submenu-items-wrapper(aria-labelledby='navbarDropdown')
-                            ul.sub-menu
-                                li.menu-item.menu-item-type-taxonomy.menu-item-object-category
-                                    a.dropdown-item(href='#') Аккаунты Battle.net
-                                li.menu-item.menu-item-type-taxonomy.menu-item-object-category
-                                    a.dropdown-item(href='#') Ключи Battle.net
-                    li.nav-item.menu-item.menu-item-type-taxonomy.menu-item-object-category.current-category-ancestor
-                        a.nav-link(href='#') MineCraft
-                    li.nav-item.menu-item.menu-item-type-taxonomy.menu-item-object-category.current-category-ancestor
-                        a.nav-link(href='#') WarThunder
+        +b.UL.main-menu.main-nav__menu.d-flex.m-0.pb-1#menu-header-menu-bottom
+            +e.LI.item.px-3.menu-item.menu-item-type-taxonomy.menu-item-object-category
+                +e.A.link(href='#') 
+                    i.fa.fa-th.mr-2
+                    | Каталог товаров
+            +e.LI.item.dropdown.px-3.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children
+                +e.A.link(href='#') Steam
+                .dropdown-content
+                    ul.sub-menu
+                        li.dropdown-menu__item
+                            a(href='#') Аккаунты Steam
+                        li.dropdown-menu__item
+                            a(href='#') Ключи и гифты Steam
+                        li.dropdown-menu__item
+                            a(href='#') Сборник игр Steam
+            +e.LI.item.dropdown.px-3.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children
+                +e.A.link(href='#') Origin
+                .dropdown-content
+                    ul.sub-menu
+                        li.dropdown-menu__item
+                            a(href='#') Аккаунты Origin
+                        li.dropdown-menu__item
+                            a(href='#') Ключи Origin
+            +e.LI.item.dropdown.px-3.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children
+                +e.A.link(href='#') Uplay
+                .dropdown-content
+                    ul.sub-menu
+                        li.dropdown-menu__item
+                            a(href='#') Аккаунты Uplay
+                        li.dropdown-menu__item
+                            a(href='#') Ключи Uplay
+            +e.LI.item.dropdown.px-3.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children
+                +e.A.link(href='#') World of Tanks
+                  .dropdown-content
+                      ul.sub-menu
+                        li.dropdown-menu__item
+                            a(href='#') Wot аккаунты с техникой
+                        li.dropdown-menu__item
+                            a(href='#') Wot аккаунты с боями
+                        li.dropdown-menu__item
+                            a(href='#') Wot аккаунты c топами
+                        li.dropdown-menu__item
+                            a(href='#') Личные Wot Аккаунты
+                        li.dropdown-menu__item
+                            a(href='#') Бонус коды Wot
+            +e.LI.item.dropdown.px-3.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children 
+                +e.A.link(href='#') Battle.net
+                .dropdown-content
+                    ul.sub-menu
+                        li.dropdown-menu__item
+                            a(href='#') Аккаунты Battle.net
+                        li.dropdown-menu__item
+                            a(href='#') Ключи Battle.net
+            +e.LI.item.px-3
+                +e.A.link(href='#') MineCraft
+            +e.LI.item.px-3
+                +e.A.link(href='#') WarThunder
+
+          
+                    
+                        
 
 
 
+                    
+            
+        
                             
                   
                         

@@ -1,50 +1,69 @@
 .main-nav
-    background:#5aa0e0
-        
-
-.menu-item a .fa
-    margin-right: 7px
-    opacity: .5
-
-#menu-header-menu-bottom .menu-item a
-    padding-left: 0
-    font-size: 14px
-    display: inline-block
-    color: #fff
-    text-decoration: none
-    cursor: pointer
-    outline: none
-    position: relative
-
-#menu-header-menu-bottom .menu-item .sub-menu
-        background: gold
-        border-radius: 3px
-        overflow: hidden
-        -webkit-box-shadow: 1px 2px 10px -4px #777
-        box-shadow: 1px 2px 10px -4px #777
-        border: 0
-       
-.menu-item
-    padding: 0 10px
- 
-
-#menu-header-menu-bottom .menu-item .sub-menu .menu-item a 
-    position: relative
-    cursor: pointer
-    color: #3e3e3e
-    white-space: nowrap
-#menu-header-menu-bottom .menu-item
-    &:hover
-        a
+    background: #5aa0e0
+    margin-top: 20px
+    +sm
+        display: none
+.main-menu
+    list-style-type: none
+    &__item
+        position: relative
+        &:hover
+            .dropdown-content
+                opacity: 1
+                margin-top: 0
+                left: -10px
+                visibility: visible 
+    &__link
+        line-height: 40px
+        display: block
+        font-size: 14px
+        color: #fff
+        &:hover
             color: gold
-// #menu-header-menu-bottom .menu-item 
-//     &.show
-//         
+            text-decoration: none
 
+    
+ 
+.dropdown-content
+    position: absolute
+    color: #000
+    background: gold
+    width: 260px
+    z-index: 99
+    padding: 30px
+    top: 100%
+    right: 200px
+    visibility: hidden 
+    opacity: 0
+    margin-left: 30px
+    box-shadow: 1px 2px 10px -4px #777
+    padding: 5px 0
+    border-radius: 3px
+    transition: opacity 0.3s ,margin-top 0.4s
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        bottom: 100%
+        width: 0px
+        height: 0px
+        left: 12px
+        border-style: solid 
+        border-width: 0 6px 6px 
+        border-color: transparent transparent gold transparent
+    
 .dropdown-menu
-    padding: 0
-#menu-header-menu-bottom .menu-item .sub-menu .menu-item a
-    padding: 10px 25px
+    &__item a
+        color: #000
+        padding-left: 15px
+        padding-right: 25px
+        width: 100%
+        position: relative
+        cursor: pointer
+        white-space: nowrap
+        &:hover
+            text-decoration: none
+
 
 #menu-header-menu-bottom .menu-item.menu-item-has-children>a:after 
     display: inline-block
@@ -58,46 +77,27 @@
     padding-left: 10px
     text-align: right
     content: "\f107"
-.dropdown-toggle::after
-    border: 0
-
-#menu-header-menu-bottom .menu-item .sub-menu .menu-item:hover a 
-    color: #323232
-#menu-header-menu-bottom .menu-item .sub-menu .dropdown-item:hover 
-    background: #ffe17b
-
-
-#menu-header-menu-bottom .menu-item .dropdown-menu:before
-    content: '' 
-    display: block 
-    position: absolute 
-    top: -6px
-    left: 12px
-    border-left: 6px solid transparent
-    border-bottom: 6px solid gold
-    border-right: 6px solid transparent
+.toggle-menu
+    display: none
+    max-width: 60px
+    &:focus
+        outline: none
+    svg
+        stroke: #fff
     +sm
-        display: none
-
-
-.navbar-nav .dropdown-menu
-    border: 0
-.dropdown-item
-    padding: 0
+        display: block
+.dropdown-content--menu
     width: 100%
+    margin-right: -900px
+    transition: margin-left 1s
+.dropdown-content--menu.open
+    opacity: 1
+    left: 0
+    visibility: visible
+    margin-left: 0
 
-#menu-header-menu-bottom .menu-item
-    padding: 0
-
-.nav-item
-    margin: 0px 15px
-#menu-header-menu-bottom .menu-item
-    &:hover
-        color: gold 
+.dropdown-content--menu
+    right: 40
 
 
-.navbar-toggler
-    position: relative
-.navbar-toggler-icon
-    background-image: url(../img/content/navbar.svg)
 

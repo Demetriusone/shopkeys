@@ -50,6 +50,10 @@ export class Common {
   }
 }
 
+	$('.toggle-menu').click(function(){
+		$(this).toggleClass('active');
+		$('.dropdown-content--menu').toggleClass('open');
+	})
 
 
 

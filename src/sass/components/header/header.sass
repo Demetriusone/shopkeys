@@ -1,11 +1,14 @@
 .header
     background: $color1
+    position: relative
     &__logo
             img
                 width: 191px
                 height: 46px
     &__search
         position: relative
+        +sm
+            display: none
         &-input
             height: 42px
             border: 0
@@ -24,6 +27,7 @@
             i
                 color: #dbdbdb
                 font-size: 18px
+        
                 
            
             
