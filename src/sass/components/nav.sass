@@ -124,5 +124,17 @@
 
 .dropdown-menu__item a
     height: 52px
+    display: block
     line-height: 52px
+    position: relative
+    &::after
+        content: ''
+        display: inline-block
+        position: absolute
+        right: 11px
+        top: 18px
+        background-image: url(../img/content/sprite.png)
+        background-position: 0 -98px
+        height: 6px
+        width: 4px
     
