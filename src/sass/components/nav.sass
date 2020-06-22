@@ -20,10 +20,8 @@
         color: #fff
         &:hover
             color: gold
-            text-decoration: none
+            text-decoration: none 
 
-    
- 
 .dropdown-content
     position: absolute
     color: #000
@@ -117,4 +115,14 @@
             border-top: 1px solid #000
         
             
-                
+.navbar-toggler
+    .navbar-toggler-icon
+            background-image: url(../img/content/close.svg)
+    &.collapsed
+        .navbar-toggler-icon
+            background-image: url(../img/content/burger.svg)
+
+.dropdown-menu__item a
+    height: 52px
+    line-height: 52px
+    

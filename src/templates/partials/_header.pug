@@ -43,17 +43,6 @@
                                     a.nav-link(href='#') MineCraft
                                 li.nav-item
                                     a.nav-link(href='#') WarThunder
-                                     
-                           
-
-                                       
-
-
-
-                                       
-                                    
-                                    
-                            
                         +b.search.col.mobile
                             +e.INPUT( placeholder='Быстрый поиск', aria-label='Search').input.w-100.px-3.m-0     
                             +e.BUTTON(type='submit').btn.btn.my-2.my-sm-0
@@ -69,10 +58,10 @@
                 +b.info.col-md-4
                     +e.A.item._stocks.pl-4(href='#')
                         +e.title Наши акции
-                        +e.SPAN.desc до 98% скидки
+                        +e.SPAN.desc.mt-2 до 98% скидки
                     +e.A.item._reviews.pl-4.ml-4(href='#')
                         +e.title Отзывы
-                        +e.SPAN.desc 5226 отзывов
+                        +e.SPAN.desc.mt-1 5226 отзывов
                 +b.BUTTON.toggle-menu.col-2
                     svg.svg-inline--fa.fa-bars.fa-w-14(aria-hidden='true', focusable='false', data-prefix='fas', data-icon='bars', role='img', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 448 512')
                         path(fill='#fff', d='M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z')
@@ -112,7 +101,7 @@
                             a(href='#') Ключи Uplay
             +e.LI.item.dropdown.px-3.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children
                 +e.A.link(href='#') World of Tanks
-                  .dropdown-content
+                .dropdown-content
                       ul.sub-menu
                         li.dropdown-menu__item
                             a(href='#') Wot аккаунты с техникой
