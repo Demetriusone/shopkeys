@@ -65,4 +65,9 @@ $('.accordion__head').on('click', function(){
 		return false;
 	});
 
+$('.hamburger--collapse').on('click', function(){
+		var el = $(this);
+		el.toggleClass('is-active');
+	});
+
 export default new Common();
